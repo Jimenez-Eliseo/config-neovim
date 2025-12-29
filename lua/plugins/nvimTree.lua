@@ -10,6 +10,7 @@ return {
 		filters = {
 			dotfiles = false,
 			custom = {},
+			git_ignored = false,
 		},
 	})
   end,
