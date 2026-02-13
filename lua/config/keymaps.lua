@@ -23,3 +23,9 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     vim.lsp.buf.format({ async = false })
   end,
 })
+
+-- Para poder renombrar un varible en el archivo 
+vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename)
+
+-- poder ver los diagnosticos flotantes bajo la linea
+vim.keymap.set('n', '<leader>h', function() vim.diagnostic.open_float({focusable = true}) end)
