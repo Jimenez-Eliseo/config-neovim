@@ -1,12 +1,13 @@
 return {
-	'akinsho/bufferline.nvim',
+	"akinsho/bufferline.nvim",
 	version = "*",
-	dependencies = 'nvim-tree/nvim-web-devicons',
-	config = function() 
+	dependencies = "nvim-tree/nvim-web-devicons",
+	config = function()
 		require("bufferline").setup({
 			options = {
 				show_buffer_close_icons = false,
-			}
+				separator_style = "slope",
+			},
 		})
-	end
+	end,
 }
